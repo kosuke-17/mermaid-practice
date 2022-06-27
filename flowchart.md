@@ -37,6 +37,55 @@ flowchart LR
 
 ---
 
+ぐるぐる回る
+
+```mermaid
+flowchart LR
+開始 --> 中間
+中間 --> 終了
+終了 --> 開始
+```
+
+```mermaid
+flowchart LR
+1 --> 2
+2 --> 3
+3 --> 4
+4 --> 1
+```
+
+```mermaid
+flowchart LR
+1 --> 2
+2 --> 3
+3 --> 4
+4 --> 2
+2 --> 1
+```
+
+---
+
+サブグラフ
+
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph グラフ1
+    a1-->a2
+    end
+    subgraph グラフ2
+    b1-->b2
+    end
+    subgraph グラフ3
+    c1-->c2
+    end
+    グラフ1 --> グラフ2
+    グラフ3 --> グラフ2
+    グラフ2 --> c2
+```
+
+---
+
 ```mermaid
 flowchart TB
 
@@ -45,4 +94,15 @@ B --> C{決定}
 C -->|壱| D[結果 1]
 C -->|弐| E[結果 2]
 C -->|参| F[結果 3]
+```
+
+---
+
+style を適用
+
+```mermaid
+flowchart LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
