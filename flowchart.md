@@ -106,3 +106,20 @@ flowchart LR
     style id1 fill:#f9f,stroke:#333,stroke-width:4px
     style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
+
+---
+
+色々な線
+
+```mermaid
+flowchart LR
+A == 太線 === B
+A -. 点線 -.- C
+A == 太い矢印 ==> D
+A -. 点線矢印 .-> E
+A -- 丸矢印 --o F
+A -- x矢印 --x G
+H <-->|双方向矢印| I
+H x--x|双方向矢印| J
+H o--o|双方向矢印| K
+```
