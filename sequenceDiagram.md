@@ -20,3 +20,21 @@ sequenceDiagram
     ロイド->ヨル:偽装家族
     ヨル->アーニャ: 偽装家族
 ```
+
+```mermaid
+sequenceDiagram
+    participant ジョン
+    Note right of ジョン: 年齢18歳
+```
+
+```mermaid
+sequenceDiagram
+    participant ジョン
+    Note over ジョン: 年齢18歳
+```
+
+```mermaid
+sequenceDiagram
+    ジョン --> ジョージ: 同級生
+    Note over ジョン,ジョージ: 年齢18歳
+```
